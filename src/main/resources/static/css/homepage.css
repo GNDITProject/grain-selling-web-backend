@@ -1,0 +1,34 @@
+#header{
+	float:right;
+	background-color: #311B92;
+	height: 100px;
+	width: 100%;
+	margin: 0;
+	text-align: right;
+}
+body{
+	margin: 0;
+}
+#body{
+	margin: 0;
+	float:right;
+	background-color: rgba(49, 27, 146, 0.5);
+	height: 457px;
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+}
+#aboutSection{
+	margin: 0;
+	display: inline-block;
+	height: 457px;
+	width: 49%;
+	overflow: auto;
+}
+#imageSection{
+	margin: 0;
+	display: inline-block;
+	height: 457px;
+	width: 49%;
+	overflow: auto;
+}
