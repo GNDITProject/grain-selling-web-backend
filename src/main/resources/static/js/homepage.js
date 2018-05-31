@@ -20,9 +20,4 @@ function buttonClicked() {
 	document.getElementById("area").value = rectangle.area();
 }
 
-function doLogin() {
-	fetch('/login').then(function (response) {
-		response.json();
-    })
-}
 
