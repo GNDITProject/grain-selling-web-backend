@@ -6,6 +6,12 @@ class User{
 }
 function onSignUpButtonClicked(){
     let user = new User(document.getElementById("username").value,document.getElementById("password").value);
-    console.log(user.username);
-    console.log(user.password);
+    fetch("/signup",{
+        method: 'POST',
+        headers: {
+            "Accept":"application/json",
+            "content-type":"application/json"
+        },
+        body: JSON.stringify(user)
+    })
 }
