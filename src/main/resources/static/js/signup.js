@@ -13,5 +13,12 @@ function onSignUpButtonClicked(){
             "content-type":"application/json"
         },
         body: JSON.stringify(user)
+    }).then(function(response) {
+        if(!response.ok){
+            throw new Error(response)
+        }
+        window.location.replace('\login');
+    }).catch(function (error) {
+        alert("signup failure");
     })
 }

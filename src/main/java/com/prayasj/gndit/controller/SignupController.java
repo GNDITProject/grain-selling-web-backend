@@ -1,8 +1,8 @@
 package com.prayasj.gndit.controller;
 
 import com.prayasj.gndit.model.User;
+import com.prayasj.gndit.response.LoginResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +20,7 @@ public class SignupController {
     @Autowired
     RestTemplate restTemplate;
 
-    @GetMapping("/signup-page")
+    @GetMapping("/signup")
     public String signup() {
         return "signup";
     }
